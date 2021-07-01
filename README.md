@@ -5,8 +5,7 @@ A Line bot who paints your images as a paint from famous painter using neural st
 ## Try it now
 
 It's now deployed on https://gnsjhenjie.tech/pbot/ as "名畫產生器-啾啾".
-
-You can also see the demo below.
+![image](https://github.com/gnsJhenJie/paint-ai-bot/blob/010a43fea4fe469a76afd259f312e60a7d82210c/docs/images/IMG_6853.PNG)
 
 ## Requirements
 
