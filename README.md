@@ -19,10 +19,6 @@ It's now deployed on https://gnsjhenjie.tech/pbot/ as "名畫產生器-啾啾".
 
 ## Deployment
 
-### **Environment Variables**
-
-You should set those environment variables in both **Cloud Run (Docker)** and the **server with high CPU performance**.
-
 ### **For Cloud Run**
 
 Build the whole project as a container
