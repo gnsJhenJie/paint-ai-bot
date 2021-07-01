@@ -34,9 +34,9 @@ gcloud builds submit  --tag gcr.io/$GOOGLE_CLOUD_PROJECT/paint-ai-bot:0.0.1
 
 Then, run the container image on Cloud Run with the below environment variables set.
 
-- LINE_CHANNEL_ACCESS_TOKEN: the channel access token of your Line bot.
-- LINE_CHANNEL_SECRET: the channel secret of your Line bot.
-- USER_INFO_GS_BUCKET_NAME: the name of the bucket in your GCP cloud storage.
+- `LINE_CHANNEL_ACCESS_TOKEN`: the channel access token of your Line bot.
+- `LINE_CHANNEL_SECRET`: the channel secret of your Line bot.
+- `USER_INFO_GS_BUCKET_NAME`: the name of the bucket in your GCP cloud storage.
 
 (For more instructions, see [GCP docs](https://cloud.google.com/run/docs/quickstarts?hl=zh-tw) and [Line developer docs](https://developers.line.biz/en/docs/messaging-api/))
 
@@ -53,12 +53,12 @@ python server.py
 
 Make sure you execute `server.py` in Python3.7 with the below environment variables set.
 
-- CRED_PATH: the credential(key) json file of your GCP service account.
-- USER_INFO_GS_BUCKET_NAME: the name of the bucket in your GCP cloud storage.
-- ITERATION_TIMES: the iteration times of the style transfer process.  
+- `CRED_PATH`: the credential(key) json file of your GCP service account.
+- `USER_INFO_GS_BUCKET_NAME`: the name of the bucket in your GCP cloud storage.
+- `ITERATION_TIMES`: the iteration times of the style transfer process.  
   (320 is recommended for basic usage, and 1000 for those who persue perfect effect)
-- LINE_CHANNEL_ACCESS_TOKEN: the channel access token of your Line bot.
-- DELTA: For those who just run one `server.py` process, set it to 0. If you run `server.py` in more than one server(or process), set it to 0, 3, 6, 9... respectively. (The delta is the pause time to avoid different server(process) dealing with the same task)
+- `LINE_CHANNEL_ACCESS_TOKEN`: the channel access token of your Line bot.
+- `DELTA`: For those who just run one `server.py` process, set it to 0. If you run `server.py` in more than one server(or process), set it to 0, 3, 6, 9... respectively. (The delta is the pause time to avoid different server(process) dealing with the same task)
 
 ## References
 
