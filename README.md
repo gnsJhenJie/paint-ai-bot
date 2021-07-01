@@ -1,6 +1,6 @@
 # Paint AI Bot
 
-A Line bot who paints your images as a paint from famous painter using neural style transfer. You can also play games and chat with it.
+A Line bot who paints your images as paint from famous painters using neural style transfer. You can also play games and chat with it.
 
 ## Try it now
 
@@ -44,7 +44,7 @@ Then, run the container image on Cloud Run with the below environment variables 
 
 ### **For high CPU performance server(s)**
 
-You can run mutilple high CPU performance server on different servers.
+You can run multiple high CPU performance servers.
 
 ```shell
 pip install -r requirements.txt
@@ -56,13 +56,13 @@ Make sure you execute `server.py` in Python3.7 with the below environment variab
 - `CRED_PATH`: the credential(key) json file of your GCP service account.
 - `USER_INFO_GS_BUCKET_NAME`: the name of the bucket in your GCP cloud storage.
 - `ITERATION_TIMES`: the iteration times of the style transfer process.  
-  (320 is recommended for basic usage, and 1000 for those who persue perfect effect)
+  (320 is recommended for basic usage, and 1000 for those who pursue perfect effect)
 - `LINE_CHANNEL_ACCESS_TOKEN`: the channel access token of your Line bot.
 - `DELTA`: For those who just run one `server.py` process, set it to 0. If you run `server.py` in more than one server(or process), set it to 0, 3, 6, 9... respectively. (The delta is the pause time to avoid different server(process) dealing with the same task)
 
 ## References
 
-Thanks a lot for the contributors below to make me complete this project.
+Thanks a lot to the contributors below to make me complete this project.
 
 - [titu1994/Nerual-Style-Transfer](https://github.com/titu1994/Neural-Style-Transfer)
 - [BingHongLi/ncu_gcp_ai_project](https://github.com/BingHongLi/ncu_gcp_ai_project)
